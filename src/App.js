@@ -1,19 +1,28 @@
+// import needed components React, BrowserRouter, Route and Switch
+
 import React, { PureComponent } from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
+// import CSS for style of HTML
+
 import './App.css';
-import axios from 'axios';
+import axios from 'axios'; // import axios for use of calling flickr API
+import apiKey from './config.js' // import API key
+
+// import created compoments to display in the app
 
 import PhotoList from './Components/PhotoList.js'
-
-import apiKey from './config.js'
 import Nav from './Components/Nav';
 import PageNotFound from './Components/PageNotFound';
 import Loading from './Components/Loading';
 import SearchForm from './Components/SearchForm'
 
+// create react app
+
 export default class App extends PureComponent {
   
+  // init with the constructor
+
   constructor() {
     super();
     this.state = {
@@ -25,6 +34,7 @@ export default class App extends PureComponent {
     };
   }
 
+  // make initial call for the default selections for pictures
   componentDidMount() {
     
     this.performSearch('Cats');
@@ -34,9 +44,14 @@ export default class App extends PureComponent {
     
   }
 
+  // search query fuction --- this functions takes a query search term and requests photos from flickr using their api
   performSearch = (query) => {
 
+    // set loading to true to display image indication to user that the data is being fetched
+
     this.setState({loading: true});
+
+    // if the query is one of the default categories, set the right photo array to the results for quick response.
 
     if (query === 'Westies') 
     {
@@ -97,12 +112,17 @@ export default class App extends PureComponent {
     
   }
 
+  // Render the components to the user for them to see and interact with
+
   render()
   {
 
     this.performSearch = this.performSearch.bind(this);
 
     return (
+
+      // setup browswer router to help implement the back and forward functionality
+
       <BrowserRouter>
         <div className="container">
           <SearchForm onSearch={this.performSearch}/>  
