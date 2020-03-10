@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-flickr-app/static/css/main.550b47ed.chunk.css",
+    "main.js": "/react-flickr-app/static/js/main.6907a162.chunk.js",
+    "main.js.map": "/react-flickr-app/static/js/main.6907a162.chunk.js.map",
+    "runtime-main.js": "/react-flickr-app/static/js/runtime-main.138d81e2.js",
+    "runtime-main.js.map": "/react-flickr-app/static/js/runtime-main.138d81e2.js.map",
+    "static/js/2.a6f4a4c6.chunk.js": "/react-flickr-app/static/js/2.a6f4a4c6.chunk.js",
+    "static/js/2.a6f4a4c6.chunk.js.map": "/react-flickr-app/static/js/2.a6f4a4c6.chunk.js.map",
+    "index.html": "/react-flickr-app/index.html",
+    "precache-manifest.d3ef9758b61494dc17ee0182b105927b.js": "/react-flickr-app/precache-manifest.d3ef9758b61494dc17ee0182b105927b.js",
+    "service-worker.js": "/react-flickr-app/service-worker.js",
+    "static/css/main.550b47ed.chunk.css.map": "/react-flickr-app/static/css/main.550b47ed.chunk.css.map",
+    "static/js/2.a6f4a4c6.chunk.js.LICENSE.txt": "/react-flickr-app/static/js/2.a6f4a4c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.138d81e2.js",
+    "static/js/2.a6f4a4c6.chunk.js",
+    "static/css/main.550b47ed.chunk.css",
+    "static/js/main.6907a162.chunk.js"
+  ]
+}
